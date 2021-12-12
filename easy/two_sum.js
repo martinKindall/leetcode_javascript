@@ -10,6 +10,9 @@
     // iterate over the input nums, substract it to the target, and
     // the result can be looked up in the dictionary.
     // the dictionary is a map of key values, key is the number and the value the index.
+
+    // time is O(N) as we iterate in the worst case twice over the array. Two secuential loops.
+    // space is O(N) as we save the entire input in a dictionary
     
     const dictionary = {};
     nums.forEach((number, idx) => {
